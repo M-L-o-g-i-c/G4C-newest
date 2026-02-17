@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cwuqhh2fcu6ra"]
+
+[ext_resource type="Texture2D" uid="uid://cetmmhqjk86br" path="res://icon.svg" id="1_ho7oe"]
+[ext_resource type="Script" uid="uid://x0qlvlvnnru2" path="res://shark(character_body_2d).gd" id="1_p20re"]
+[ext_resource type="Texture2D" uid="uid://cq71kw4i5lbai" path="res://Shark.png" id="1_rnpve"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l7g0s"]
+radius = 13.0
+height = 44.0
+
+[node name="HomeScene(node2d)" type="Node2D" unique_id=1963056955]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1612711631]
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 1154.0
+offset_bottom = 642.0
+texture = ExtResource("1_ho7oe")
+metadata/_edit_use_anchors_ = true
+
+[node name="Shark(CharacterBody2D)" type="CharacterBody2D" parent="." unique_id=257848801]
+editor_description = "This is our main character"
+position = Vector2(714, 359)
+script = ExtResource("1_p20re")
+speed = 200
+
+[node name="Camera2D" type="Camera2D" parent="Shark(CharacterBody2D)" unique_id=1826452297]
+zoom = Vector2(2, 2)
+
+[node name="SharkBody(CollisionShape2D)" type="CollisionShape2D" parent="Shark(CharacterBody2D)" unique_id=112479585]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_l7g0s")
+
+[node name="SharkSprite(Sprite2D)" type="Sprite2D" parent="Shark(CharacterBody2D)" unique_id=1127842969]
+position = Vector2(-0.3750012, 1.1249962)
+scale = Vector2(1.6484369, 1.6796877)
+texture = ExtResource("1_rnpve")

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://ql5cul8bsok0"]
+
+[ext_resource type="Script" uid="uid://x0qlvlvnnru2" path="res://shark(character_body_2d).gd" id="1_2ak53"]
+[ext_resource type="Texture2D" uid="uid://cq71kw4i5lbai" path="res://Shark.png" id="2_amhng"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xfxro"]
+radius = 13.0
+height = 44.0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7eert"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_c4l0p"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+
+[node name="fishing" type="Node2D" unique_id=245582649]
+
+[node name="boat" type="Node2D" parent="." unique_id=1338916762]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=646318631]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Shark(CharacterBody2D)" type="CharacterBody2D" parent="." unique_id=1251157507]
+editor_description = "This is our main character"
+position = Vector2(714, 359)
+script = ExtResource("1_2ak53")
+speed = 200
+
+[node name="Camera2D" type="Camera2D" parent="Shark(CharacterBody2D)" unique_id=617435981]
+zoom = Vector2(2, 2)
+
+[node name="SharkBody(CollisionShape2D)" type="CollisionShape2D" parent="Shark(CharacterBody2D)" unique_id=471998487]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_xfxro")
+
+[node name="SharkSprite(Sprite2D)" type="Sprite2D" parent="Shark(CharacterBody2D)" unique_id=335524347]
+position = Vector2(-0.3750012, 1.1249962)
+scale = Vector2(1.6484369, 1.6796877)
+texture = ExtResource("2_amhng")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1917942632]
+material = SubResource("CanvasItemMaterial_7eert")
+process_material = SubResource("ParticleProcessMaterial_c4l0p")

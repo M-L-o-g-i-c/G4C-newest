@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://0wtif4elp3eu"]
+
+[ext_resource type="Script" uid="uid://bdtpspsf5xga5" path="res://click1.gd" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://dyns8w3rol5m5" path="res://quit.gd" id="2_62e2m"]
+
+[node name="Control" type="Control" unique_id=654548529]
+modulate = Color(1, 0, 1, 1)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="." unique_id=558898807]
+modulate = Color(0, 0, 1, 1)
+layout_mode = 0
+offset_left = 327.0
+offset_top = 1.0
+offset_right = 388.75
+offset_bottom = 24.0
+scale = Vector2(7, 7)
+tooltip_text = "a project made by highschoolers"
+text = "SHARK"
+horizontal_alignment = 1
+
+[node name="start" type="Button" parent="." unique_id=2079234220]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 211.0
+offset_right = 678.0
+offset_bottom = 313.0
+text = "START"
+script = ExtResource("1_0fbet")
+
+[node name="quit" type="Button" parent="." unique_id=1590891451]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 398.0
+offset_right = 675.0
+offset_bottom = 492.0
+text = "QUIT"
+script = ExtResource("2_62e2m")
+
+[connection signal="pressed" from="start" to="start" method="_on_start_pressed"]
+[connection signal="pressed" from="quit" to="quit" method="_on_quit_pressed"]

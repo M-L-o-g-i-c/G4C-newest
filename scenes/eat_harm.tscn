@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b5ijj66ru383n"]
+
+[node name="eat_harm" type="Node2D" unique_id=1352526415]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1222661421]
+position = Vector2(467, 201)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=328872017]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D" unique_id=686584158]
+position = Vector2(0, 2)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(8, 6, 18, -12, -18, -12, -8, 6)

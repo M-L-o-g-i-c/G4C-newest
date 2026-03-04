@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://0wtif4elp3eu"]
 
-[ext_resource type="Script" uid="uid://bdtpspsf5xga5" path="res://click1.gd" id="1_0fbet"]
-[ext_resource type="Script" uid="uid://dyns8w3rol5m5" path="res://quit.gd" id="2_62e2m"]
+[ext_resource type="Script" uid="uid://bdtpspsf5xga5" path="res://autism/click1.gd" id="1_0fbet"]
+[ext_resource type="Texture2D" uid="uid://scqfjake3vke" path="res://CheesePizza/coral reef.png" id="1_qtu10"]
+[ext_resource type="Script" uid="uid://dyns8w3rol5m5" path="res://autism/quit.gd" id="2_62e2m"]
 
 [node name="Control" type="Control" unique_id=654548529]
-modulate = Color(1, 0, 1, 1)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,6 +12,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1020557715]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 651.0
+texture = ExtResource("1_qtu10")
 
 [node name="Label" type="Label" parent="." unique_id=558898807]
 modulate = Color(0, 0, 1, 1)
@@ -22,6 +28,7 @@ offset_right = 388.75
 offset_bottom = 24.0
 scale = Vector2(7, 7)
 tooltip_text = "a project made by highschoolers"
+mouse_filter = 0
 text = "SHARK"
 horizontal_alignment = 1
 

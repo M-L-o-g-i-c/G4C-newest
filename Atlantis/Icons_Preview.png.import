@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq71kw4i5lbai"
-path="res://.godot/imported/Shark.png-bda7e790bf551f7dbb858d37c08e6af5.ctex"
+uid="uid://bv18ayaaebns1"
+path="res://.godot/imported/Icons_Preview.png-f78f483224915fde20bca753e8741057.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Shark.png"
-dest_files=["res://.godot/imported/Shark.png-bda7e790bf551f7dbb858d37c08e6af5.ctex"]
+source_file="res://Atlantis/Icons_Preview.png"
+dest_files=["res://.godot/imported/Icons_Preview.png-f78f483224915fde20bca753e8741057.ctex"]
 
 [params]
 
